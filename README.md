@@ -283,7 +283,7 @@ localhost:5000/v1/apod/?api_key=DEMO_KEY&search_term=jwst&search_title=false&sea
 </p>
 </details>
 
-## SQL Database <a href="database"></a>
+## SQL Database <a name="database"></a>
 The APODx API stores all APOD entries in a SQL database with the following schema.
 Each APOD entry can have more than one instrument asssociated with it.
 ```mermaid
@@ -307,7 +307,7 @@ A --> D(keywords)
 |keywords_id|
 |apod_version|
 
-## Usage <a href="usage"></a>
+## Usage <a name="usage"></a>
 
 1. First create a SQL database with the supplied schema.
 2. Add your database information as environment variables
@@ -318,6 +318,6 @@ A --> D(keywords)
 
 
 
-## Author <a href="author"></a>
+## Author <a name="author"></a>
 - Mario Flores Marcial
 - Based on code from the [NASA APOD API](https://github.com/nasa/apod-api/tree/master)
