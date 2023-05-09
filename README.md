@@ -11,8 +11,8 @@ The APODx API relies on the [NASA APOD API](https://github.com/nasa/apod-api/tre
 
 # Table of contents
 1. [Docs](#docs)
-2. [Usage](#usage)
-3. [SQL Database](#database)
+2. [SQL Database](#database)
+3. [Usage](#usage)
 4. [Author](#author)
 
 
@@ -283,15 +283,6 @@ localhost:5000/v1/apod/?api_key=DEMO_KEY&search_term=jwst&search_title=false&sea
 </p>
 </details>
 
-## Usage <a href="usage"></a>
-
-1. First create a SQL database with the supplied schema.
-2. Add your database information as environment variables
-3. Acquire a NASA APOD API key for better performance. You can get the API key <a href="https://api.nasa.gov/#signUp">here</a>
-4. Store the NASA APOD API key as an environmental variable
-5. Update/populate the database by running the `apodx.py` program.
-6. Deploy the `apodx_api.py` program. Create API keys as local variables for the API.
-
 ## SQL Database <a href="database"></a>
 The APODx API stores all APOD entries in a SQL database with the following schema.
 Each APOD entry can have more than one instrument asssociated with it.
@@ -315,6 +306,16 @@ A --> D(keywords)
 |apod_explanation|
 |keywords_id|
 |apod_version|
+
+## Usage <a href="usage"></a>
+
+1. First create a SQL database with the supplied schema.
+2. Add your database information as environment variables
+3. Acquire a NASA APOD API key for better performance. You can get the API key <a href="https://api.nasa.gov/#signUp">here</a>
+4. Store the NASA APOD API key as an environmental variable
+5. Update/populate the database by running the `apodx.py` program.
+6. Deploy the `apodx_api.py` program. Create API keys as local variables for the API.
+
 
 
 ## Author <a href="author"></a>
