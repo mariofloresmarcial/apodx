@@ -47,7 +47,7 @@ There is only one endpoint in this service which takes 16 optional fields as par
 **Example** 
 
 ```bash
-localhost:5000/v1/apod?api_key=DEMO_KEY&date=2014-10-01
+localhost:5000/v1/apod?api_key=DEMO_KEY&date=2022-12-25
 ```
 <details><summary>See Return Object</summary>
 <p>
